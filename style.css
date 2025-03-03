@@ -1,0 +1,226 @@
+body {
+    --bs-body-bg: #222831;
+    overflow-x: hidden;
+}
+
+body.modal-open {
+    overflow: scroll;
+    padding-right: 0 !important;
+}
+
+.navbar {
+    background-color: rgb(57, 62, 70, 1);
+}
+
+.navbar-brand, .nav-link, .display-4, .dropdown-item, .lead{
+    color: #FFD369 !important;
+}
+
+.navbar-brand:hover {
+    transition: color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(255, 211, 105) !important;
+    color: #222831 !important;
+    transition: color 0.3s, background-color 0.3s ease;
+    border-radius: 0 0 5px 5px;
+}
+
+.nav-item ul {
+    background-color: rgb(57, 62, 70, 0.6);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    border: none;
+    padding: 0px;
+}
+
+section {
+    position: relative;
+}
+
+section::before {
+    content: "";
+    display: block;
+    height: 60px; /* Adjust the value as needed */
+    margin-top: -60px; /* Adjust the value as needed */
+    visibility: hidden;
+}
+
+
+.card {
+    background-color: #393E46;
+    color: #EEEEEE !important;
+    border: 2px solid #FFD369!important;
+    height: 38rem !important;
+}
+
+.card h5 {
+    color: #FFD369 !important;
+}
+
+.card img{
+    height: 22rem !important;
+}
+
+.modal {
+    color: #EEEEEE !important;
+    --bs-modal-header-border-color: #FFD369 !important;
+    --bs-modal-footer-border-color: #FFD369 !important;
+}
+
+.btn-close {
+    --bs-btn-close-color: #FFD369 !important;
+    filter: invert(79%) sepia(16%) saturate(748%) hue-rotate(1deg) brightness(104%) contrast(101%);
+    --bs-btn-close-focus-shadow: transparent !important;
+}
+
+.modal h1 {
+    color: #FFD369 !important;
+}
+
+.btn-secondary {
+    --bs-btn-bg: transparent !important;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: relative;
+    z-index: 2;
+    color: #EEEEEE !important;
+}
+
+.carousel-caption h5{
+    color: #FFD369 !important;
+}
+
+.carousel-indicators button {
+    background-color: #FFD369 !important;
+}
+
+.list-group-item {
+    border: 1px solid #FFD369!important;
+    --bs-list-group-color: #FFD369;
+}
+
+.list-group-item.active {
+    background-color: #FFD369 !important;
+    color: #222831 !important;
+}
+
+.list-group {
+    --bs-list-group-action-hover-bg: #FFD369 !important;
+    --bs-list-group-action-active-bg: var(--bs-list-group-action-hover-bg) !important;
+}
+    
+.scrollspy-example {
+    height: 600px; 
+    overflow-y: scroll; 
+    border: 1px solid #FFD369;
+    padding: 10px; 
+    border-radius: 7px;
+    color: #FFD369  !important;
+}
+
+.scrollspy-example p {
+    color: #EEEEEE !important;
+}
+
+/* Custom Scroll Bar for scrollspy & modal-body */
+::-webkit-scrollbar, .scrollspy-example::-webkit-scrollbar, .modal-body::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track, .scrollspy-example::-webkit-scrollbar-track, .modal-body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ffd2695a;
+    border-radius: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb, .scrollspy-example::-webkit-scrollbar-thumb, .modal-body::-webkit-scrollbar-thumb {
+    background: #ffd269c5;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover, .scrollspy-example::-webkit-scrollbar-thumb:hover, .modal-body::-webkit-scrollbar-thumb:hover {
+    background: #FFD369;
+}
+
+.contact-form, .form-control::placeholder {
+    color: #FFD369 !important;
+}
+
+.contact-form {
+    position: relative;
+    background-image: url(src/for\ yu.jpg);
+    opacity: 0.8;
+    background-size: 50%; /* Adjust the width as needed */
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 550px;
+}
+
+.contact-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(34, 40, 49, 1), rgba(34, 40, 49, 0.1));
+    z-index: 1;
+}
+
+.contact-form .row {
+    position: relative;
+    z-index: 2;
+}
+
+.form-control {
+    border: 1px solid #FFD369 !important;
+    color: #FFD369 !important;
+    background-color: var(--bs-body-bg) !important;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px 2px #FFD369 !important;
+}
+
+/* Custom Autofill Color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #FFD369 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSSFlowa</title>
+    <link rel="icon" href="src/icon/sunflower.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container">
+            <a href="#" class="navbar-brand mb-0 h1">
+                <img src="src/icon/sunflower.png" alt="sssflowa" width="30" height="30">
+                SSSFlowa
+            </a>
+            
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div 
+            class="collapse navbar-collapse"
+            id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown" data-bs-auto-close="inside">
+                        <a href="#" class="nav-link dropdown-toggle disabled"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu"
+                        aria-labelledby="navbarDropdown">
+                            <li><a href="#Varieties" class="dropdown-item">Sunflower Varieties</a></li>
+                            <li><a href="#About" class="dropdown-item">FAQs</a></li>
+                            <li><a href="#How" class="dropdown-item">How to Grow Sunflower</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Contact" class="nav-link">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex ms-auto">
+                    <input type="text" class="form-control me-2">
+                    <button type="submit" class="btn btn-outline-light">Search</button>
+                </form> -->
+        </div>
+    </div>
+    </nav>
+    <section class="hero-section d-flex align-items-center position-relative" style="background: linear-gradient(to top, rgb(34, 40, 49), rgba(0, 0, 0, 0.3)), url('src/sssflowa.mp4'); color: #EEEEEE; height: 100vh;">
+        <video autoplay muted loop class="position-fixed w-100 h-100" style="object-fit: cover; z-index: -1; top: 0; left: 0;">
+            <source src="src/sssflowa.mp4" type="video/mp4">
+        </video>
+        <div class="container text-center">
+            <h1 class="display-4" style="font-style: italic;">Carpe Diem.</h1>
+            <p class="lead">Seize the day.</p>
+            <a href="#Varieties" class="btn btn-outline-light btn-lg" style="font-style: italic; color: #FFD369; border-color: #FFD369;" onmouseover="this.style.color='#222831'; this.style.backgroundColor='#FFD369';" onmouseout="this.style.color='#FFD369'; this.style.backgroundColor='transparent';">Explore</a>
+            <!-- <a href="#About" class="btn btn-outline-light btn-lg" style="font-style: italic; color: #FFD369; border-color: #FFD369;" onmouseover="this.style.color='#222831'; this.style.backgroundColor='#FFD369';" onmouseout="this.style.color='#FFD369'; this.style.backgroundColor='transparent';">About</a>
+            <a href="#Contact" class="btn btn-outline-light btn-lg" style="font-style: italic; color: #FFD369; border-color: #FFD369;" onmouseover="this.style.color='#222831'; this.style.backgroundColor='#FFD369';" onmouseout="this.style.color='#FFD369'; this.style.backgroundColor='transparent';">Contact Us</a> -->
+        </div>
+    </section>
+
+<div style="background-color: #222831;">
+    <section class="container" id="Varieties">
+        <h1 class="display-4 container">Sunflower Varieties</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" style="margin-bottom: 10rem;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="src/Slide (1).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Common Sunflower</h5>
+                    <p>The classic large Sunflower.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="src/Slide (2).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Dwarf Sunflower</h5>
+                    <p>Perfect for home gardens.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="src/Slide (3).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Red & Orange Varieties</h5>
+                    <p>Examples like Moulin Rouge and Autumn Beauty.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="src/Slide (4).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Giant Sunflower</h5>
+                    <p>Like the Russian Mammoth.</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+    </section>
+
+    <section class="container my-5" id="About" style="padding-top: 40px;">
+        <h1 class="display-4">FAQs</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="src/Margaret Gerding _ Maine Art Hill.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">What are Sunflowers?</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium obcaecati sunt officia voluptas neque libero temporibus, nemo distinctio consectetur, hic at minus dolor! Quibusdam, aspernatur aliquam nam illum nisi animi!</p>
+                        <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="font-style: italic; color: #FFD369; border-color: #FFD369;" onmouseover="this.style.color='#222831'; this.style.backgroundColor='#FFD369';" onmouseout="this.style.color='#FFD369'; this.style.backgroundColor='transparent';">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="src/download (1).jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">History & Symbolism</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae obcaecati mollitia nam aut praesentium maiores quis vitae veniam officiis autem eum ipsum officia labore, reiciendis accusantium tempore, beatae suscipit quaerat.</p>
+                        <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="font-style: italic; color: #FFD369; border-color: #FFD369;" onmouseover="this.style.color='#222831'; this.style.backgroundColor='#FFD369';" onmouseout="this.style.color='#FFD369'; this.style.backgroundColor='transparent';">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="src/Светлана Рогозина.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunflowers in Art & Literature</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat pariatur dolores dicta, facere id molestias voluptas nobis aut asperiores quia porro voluptates dignissimos neque sed repellendus? Maiores, eaque! Delectus.</p>
+                        <a href="#" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="font-style: italic; color: #FFD369; border-color: #FFD369;" onmouseover="this.style.color='#222831'; this.style.backgroundColor='#FFD369';" onmouseout="this.style.color='#FFD369'; this.style.backgroundColor='transparent';">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row" style="padding-top: 3rem;" id="How">
+            <h1 class="display-4">How to Grow Sunflower</h1>
+            <div class="col-4">
+                <div class="list-group" id="list-example">
+                    <a href="#list-item-1" class="list-group-item list-group-item-action">Step-by-Step Growing Guide</a>
+                    <a href="#list-item-2" class="list-group-item list-group-item-action">Best Soil & Climate</a>
+                    <a href="#list-item-3" class="list-group-item list-group-item-action">Watering & Care Tips</a>
+                    <a href="#list-item-4" class="list-group-item list-group-item-action">Common Pests & Diseases</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">Step-by-Step Growing Guide</h4>
+                <p>LoreLorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, placeat vitae repudiandae autem quae totam molestias sit at inventore, maxime ut obcaecati error tenetur praesentium accusamus veritatis recusandae architecto. Voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex vitae quasi quis atque sequi distinctio. Harum deleniti enim dolor tempore, nihil, possimus sint, culpa quo omnis architecto nobis odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione quod earum maxime, nisi possimus tempore laudantium labore magnam minus eos quia quam dignissimos id cupiditate facilis odit distinctio illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur saepe tempore at architecto iure unde fugit, accusantium nesciunt iste fuga vero animi perferendis, illo cupiditate assumenda veritatis, ut commodi omnis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt aliquid quasi, vel magnam fugiat velit voluptates perferendis amet neque, itaque, molestias accusamus dolor recusandae harum iste nulla distinctio ab voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero natus maxime earum fugit dolorum, architecto adipisci asperiores odit unde voluptate nesciunt necessitatibus numquam recusandae atque dolore non quidem velit. Aut! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil natus beatae perspiciatis temporibus! Adipisci, corrupti voluptatem eligendi unde deserunt porro. Eum blanditiis officia cumque expedita quisquam rem odio pariatur. Harum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt reprehenderit dolores soluta repudiandae quasi ratione aspernatur officia id eos molestias. Nemo obcaecati reprehenderit asperiores animi ut vel reiciendis. Molestiae, nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, delectus cumque. Quas voluptates nihil, molestiae error illum necessitatibus aperiam nostrum corporis harum suscipit ullam, dignissimos quisquam, voluptatum dolore minus numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, a. Odio, iusto sed consequuntur mollitia voluptas ipsum natus, tempora iste nemo voluptatem earum maiores, error explicabo ut aliquid eum optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolor voluptatum similique assumenda, distinctio non quia optio, velit blanditiis ut nisi ab saepe eaque incidunt voluptates, illo cumque nihil atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet neque natus fugit accusantium excepturi mollitia molestiae pariatur perferendis necessitatibus illo? Consequuntur eius reprehenderit impedit in, praesentium facere accusantium laboriosam labore.Lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui dolorum neque veniam, cum animi deleniti. Iste officia dolor, veritatis exercitationem architecto ex molestias delectus qui et excepturi illo? Amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus consectetur odio hic illum veniam similique, est deleniti quos omnis error, modi quasi iusto eveniet ratione mollitia. Minima saepe provident fuga?</p>
+                <h4 id="list-item-2">Best Soil & Climate</h4>
+                <p>LoreLorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, placeat vitae repudiandae autem quae totam molestias sit at inventore, maxime ut obcaecati error tenetur praesentium accusamus veritatis recusandae architecto. Voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex vitae quasi quis atque sequi distinctio. Harum deleniti enim dolor tempore, nihil, possimus sint, culpa quo omnis architecto nobis odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione quod earum maxime, nisi possimus tempore laudantium labore magnam minus eos quia quam dignissimos id cupiditate facilis odit distinctio illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur saepe tempore at architecto iure unde fugit, accusantium nesciunt iste fuga vero animi perferendis, illo cupiditate assumenda veritatis, ut commodi omnis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt aliquid quasi, vel magnam fugiat velit voluptates perferendis amet neque, itaque, molestias accusamus dolor recusandae harum iste nulla distinctio ab voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero natus maxime earum fugit dolorum, architecto adipisci asperiores odit unde voluptate nesciunt necessitatibus numquam recusandae atque dolore non quidem velit. Aut! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil natus beatae perspiciatis temporibus! Adipisci, corrupti voluptatem eligendi unde deserunt porro. Eum blanditiis officia cumque expedita quisquam rem odio pariatur. Harum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt reprehenderit dolores soluta repudiandae quasi ratione aspernatur officia id eos molestias. Nemo obcaecati reprehenderit asperiores animi ut vel reiciendis. Molestiae, nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, delectus cumque. Quas voluptates nihil, molestiae error illum necessitatibus aperiam nostrum corporis harum suscipit ullam, dignissimos quisquam, voluptatum dolore minus numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, a. Odio, iusto sed consequuntur mollitia voluptas ipsum natus, tempora iste nemo voluptatem earum maiores, error explicabo ut aliquid eum optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolor voluptatum similique assumenda, distinctio non quia optio, velit blanditiis ut nisi ab saepe eaque incidunt voluptates, illo cumque nihil atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet neque natus fugit accusantium excepturi mollitia molestiae pariatur perferendis necessitatibus illo? Consequuntur eius reprehenderit impedit in, praesentium facere accusantium laboriosam labore.Lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui dolorum neque veniam, cum animi deleniti. Iste officia dolor, veritatis exercitationem architecto ex molestias delectus qui et excepturi illo? Amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus consectetur odio hic illum veniam similique, est deleniti quos omnis error, modi quasi iusto eveniet ratione mollitia. Minima saepe provident fuga?</p>
+                <h4 id="list-item-3">Watering & Care Tips</h4>
+                <p>LoreLorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, placeat vitae repudiandae autem quae totam molestias sit at inventore, maxime ut obcaecati error tenetur praesentium accusamus veritatis recusandae architecto. Voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex vitae quasi quis atque sequi distinctio. Harum deleniti enim dolor tempore, nihil, possimus sint, culpa quo omnis architecto nobis odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione quod earum maxime, nisi possimus tempore laudantium labore magnam minus eos quia quam dignissimos id cupiditate facilis odit distinctio illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur saepe tempore at architecto iure unde fugit, accusantium nesciunt iste fuga vero animi perferendis, illo cupiditate assumenda veritatis, ut commodi omnis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt aliquid quasi, vel magnam fugiat velit voluptates perferendis amet neque, itaque, molestias accusamus dolor recusandae harum iste nulla distinctio ab voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero natus maxime earum fugit dolorum, architecto adipisci asperiores odit unde voluptate nesciunt necessitatibus numquam recusandae atque dolore non quidem velit. Aut! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil natus beatae perspiciatis temporibus! Adipisci, corrupti voluptatem eligendi unde deserunt porro. Eum blanditiis officia cumque expedita quisquam rem odio pariatur. Harum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt reprehenderit dolores soluta repudiandae quasi ratione aspernatur officia id eos molestias. Nemo obcaecati reprehenderit asperiores animi ut vel reiciendis. Molestiae, nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, delectus cumque. Quas voluptates nihil, molestiae error illum necessitatibus aperiam nostrum corporis harum suscipit ullam, dignissimos quisquam, voluptatum dolore minus numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, a. Odio, iusto sed consequuntur mollitia voluptas ipsum natus, tempora iste nemo voluptatem earum maiores, error explicabo ut aliquid eum optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolor voluptatum similique assumenda, distinctio non quia optio, velit blanditiis ut nisi ab saepe eaque incidunt voluptates, illo cumque nihil atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet neque natus fugit accusantium excepturi mollitia molestiae pariatur perferendis necessitatibus illo? Consequuntur eius reprehenderit impedit in, praesentium facere accusantium laboriosam labore.Lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui dolorum neque veniam, cum animi deleniti. Iste officia dolor, veritatis exercitationem architecto ex molestias delectus qui et excepturi illo? Amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus consectetur odio hic illum veniam similique, est deleniti quos omnis error, modi quasi iusto eveniet ratione mollitia. Minima saepe provident fuga?</p>
+                <h4 id="list-item-4">Common Pests & Diseases</h4>
+                <p>LoreLorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, placeat vitae repudiandae autem quae totam molestias sit at inventore, maxime ut obcaecati error tenetur praesentium accusamus veritatis recusandae architecto. Voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex vitae quasi quis atque sequi distinctio. Harum deleniti enim dolor tempore, nihil, possimus sint, culpa quo omnis architecto nobis odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione quod earum maxime, nisi possimus tempore laudantium labore magnam minus eos quia quam dignissimos id cupiditate facilis odit distinctio illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur saepe tempore at architecto iure unde fugit, accusantium nesciunt iste fuga vero animi perferendis, illo cupiditate assumenda veritatis, ut commodi omnis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt aliquid quasi, vel magnam fugiat velit voluptates perferendis amet neque, itaque, molestias accusamus dolor recusandae harum iste nulla distinctio ab voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero natus maxime earum fugit dolorum, architecto adipisci asperiores odit unde voluptate nesciunt necessitatibus numquam recusandae atque dolore non quidem velit. Aut! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil natus beatae perspiciatis temporibus! Adipisci, corrupti voluptatem eligendi unde deserunt porro. Eum blanditiis officia cumque expedita quisquam rem odio pariatur. Harum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt reprehenderit dolores soluta repudiandae quasi ratione aspernatur officia id eos molestias. Nemo obcaecati reprehenderit asperiores animi ut vel reiciendis. Molestiae, nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, delectus cumque. Quas voluptates nihil, molestiae error illum necessitatibus aperiam nostrum corporis harum suscipit ullam, dignissimos quisquam, voluptatum dolore minus numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, a. Odio, iusto sed consequuntur mollitia voluptas ipsum natus, tempora iste nemo voluptatem earum maiores, error explicabo ut aliquid eum optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolor voluptatum similique assumenda, distinctio non quia optio, velit blanditiis ut nisi ab saepe eaque incidunt voluptates, illo cumque nihil atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet neque natus fugit accusantium excepturi mollitia molestiae pariatur perferendis necessitatibus illo? Consequuntur eius reprehenderit impedit in, praesentium facere accusantium laboriosam labore.Lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui dolorum neque veniam, cum animi deleniti. Iste officia dolor, veritatis exercitationem architecto ex molestias delectus qui et excepturi illo? Amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus consectetur odio hic illum veniam similique, est deleniti quos omnis error, modi quasi iusto eveniet ratione mollitia. Minima saepe provident fuga?</p>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section id="Contact" style="margin: 10rem 10rem 10rem 10rem;">
+    <div class="contact-form d-flex justify-content-center" style=" border: 1px solid #FFD369; padding: 2rem; border-radius: 10px;">
+        <div class="row" style="width: 100%;">
+            <div class="col-md-6">
+                <h1 class="display-4 container">Contact Us</h1>
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="FN - SN - MI" autocomplete="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn" id="submitButton" onclick="submitForm()" style="color: #FFD369; border-color: #FFD369;" onmouseover="this.style.color='#222831'; this.style.backgroundColor='#FFD369';" onmouseout="this.style.color='#FFD369'; this.style.backgroundColor='transparent';">Submit</button>
+                </form>
+                <div id="messageSent" style="display: none; color: #FFD369; margin-top: 1rem;">Email Sent!</div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer class="text-center text-white" style="background-color: #393E46; padding: 1rem;">
+    <div class="container">
+        <p>&copy; 2023 SSSFlowa. All rights reserved.</p>
+    </div>
+</footer>
+
+</div>
+
+
+<!-- Modal 1-->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">What Are Sunflowers?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: #FFD369; border-color: #FFD369;" onmouseover="this.style.color='#222831'; this.style.backgroundColor='#FFD369';" onmouseout="this.style.color='#FFD369'; this.style.backgroundColor='transparent';">
+            Close</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">History & Symbolism</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: #FFD369; border-color: #FFD369;" onmouseover="this.style.color='#222831'; this.style.backgroundColor='#FFD369';" onmouseout="this.style.color='#FFD369'; this.style.backgroundColor='transparent';">
+            Close</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sunflowers in Art & Literature</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sunt! Cumque doloremque asperiores optio at earum in nobis aliquam, a vero quibusdam cupiditate sit doloribus accusantium sunt ad quae illo.
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: #FFD369; border-color: #FFD369;" onmouseover="this.style.color='#222831'; this.style.backgroundColor='#FFD369';" onmouseout="this.style.color='#FFD369'; this.style.backgroundColor='transparent';">
+            Close</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
