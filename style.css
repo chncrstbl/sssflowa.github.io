@@ -63,13 +63,17 @@ section::before {
 }
 
 .card img{
-    height: 22rem !important;
+    height: 20rem !important;
 }
 
 .modal {
     color: #EEEEEE !important;
     --bs-modal-header-border-color: #FFD369 !important;
     --bs-modal-footer-border-color: #FFD369 !important;
+}
+
+.modal h3 {
+    color: #FFD369 !important;
 }
 
 .btn-close {
@@ -145,7 +149,7 @@ section::before {
     color: #FFD369  !important;
 }
 
-.scrollspy-example p {
+.scrollspy-example ul, .ol-in {
     color: #EEEEEE !important;
 }
 
